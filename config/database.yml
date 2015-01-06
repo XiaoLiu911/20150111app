@@ -9,15 +9,15 @@
 development: &development
       adapter: mysql2
       encoding: utf8
-      database: two
+      database: forms
       pool: 5
       username: root
       password: '11111111'
       host: localhost
 test:
       <<: *development
-      database: two
+      database: forms
 
 production:
       <<: *development
-      database: two
+      database: forms
