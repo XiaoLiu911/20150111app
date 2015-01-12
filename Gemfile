@@ -9,6 +9,9 @@ gem 'rspec-rails', '~>2.13.1'
 gem 'guard-rspec', '~>2.5.0'
 gem 'bootstrap-sass', '~>2.3.2.0'
 gem 'bcrypt-ruby', '~>3.0.1'
+gem 'faker', '~>1.1.2'
+gem 'will_paginate', '~>3.0.4'
+gem 'bootstrap-will_paginate', '~>0.0.9'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,6 +20,11 @@ group :test do
   gem 'capybara', '~>2.1.0'
 end
 
+group :development, :test do
+   gem 'pry-rails'
+   gem 'pry-doc'
+   gem 'pry-nav'
+end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
